@@ -7,73 +7,95 @@ let sentence = ''
 let typedWords = []
 let isPlaying = false
 let intervalId;
+let currentPassage = []
+let passages = null
+let currentWordIndex = 0
 
 
-async function getPassageArray (){
-  const response = await fetch('./passages.json')
-  const data = await response.json()
-  const index = randomNumber(data.passages.length)
-
-  const passage = data.passages[index]
-  const passageArray = passage.content.split(' ')
-  
-  return passageArray
+async function initializePassages() {
+  try {
+    const response = await fetch('./passages.json')
+    const data = await response.json()
+    passages = data.passages
+    await getNewPassage()
+  } catch (error) {
+    console.error('Error loading passages:', error)
+  }
 }
 
-async function displayWords() {
+function getNewPassage() {
+  const index = randomNumber(passages.length)
+  currentPassage = passages[index].content.split(' ')
+  displayWords()
+}
 
-  // get passage
-  const passageArray  = await getPassageArray()
-
+function displayWords() {
   let wordNr = 0
-
+  displayDiv.innerHTML = ''
   
-    // Display each word in the Word-display
-    passageArray.forEach(word  => {
+  currentPassage.forEach(word => {
     const span = document.createElement('span')
     span.dataset.wordnr = wordNr++
     span.textContent = word
     displayDiv.appendChild(span)
-  });
+  })
 }
 
-function startGame(){
-  isPlaying = true
-  startTimer()
+function startGame() {
+  if (!isPlaying) {
+    isPlaying = true
+    startTimer()
+  }
   
-  const results =  compareInput(input.value)
+  const results = compareInput(input.value)
   updatePassageStyling(results)
-
 }
 
+function updatePassageStyling(results) {
+  const passageSpans = document.querySelectorAll('.words-display span')
 
-  // Split user input into words
-async function compareInput(userInput) {
-  const passageArray  = await getPassageArray()
+  passageSpans.forEach((span) => {
+    const index = parseInt(span.dataset.wordnr)
+    const result = results[index]
 
-  // break down the passage in to words
-  const userInputArray = userInput.trim().split(" "); // Split input by spaces
-  
-  const results = passageArray.map((word, index) => {
-    if (userInputArray[index] === undefined) {
-      return { word, status: "missing" }; // User hasn't typed this word yet
-    } else if (userInputArray[index] === word) {
-      // Word matches
-      console.log(document.querySelector(`span[data-wordnr=${index}]`))
-    } else {
-      return { word, status: "incorrect" }; // Word doesn't match
+    span.className = ''
+    
+    if (result.status === "correct") {
+      span.className = 'word-correct'
+    } else if (result.status === "incorrect") {
+      span.className = 'word-incorrect'
+    } else if (result.status === "missing") {
+      span.className = 'word-pending'
     }
-  });
-  console.log(results)
-
-  return results
+  })
 }
 
-function checkInput(input) {
-  const typedWords = []
-  input.split(' ').push(typedWords)
-  typedWords.forEach(word => {
-  });
+function compareInput(userInput) {
+  const userWords = userInput.trim().split(" ")
+  const currentWord = userWords[userWords.length - 1]
+  const previousWords = userWords.slice(0, -1)
+  
+  return currentPassage.map((word, index) => {
+    // For completed words
+    if (index < previousWords.length) {
+      return {
+        word,
+        status: previousWords[index] === word ? "correct" : "incorrect"
+      }
+    }
+    // For the current word being typed
+    else if (index === previousWords.length) {
+      if (word.startsWith(currentWord)) {
+        return { word, status: "correct" }
+      } else {
+        return { word, status: "incorrect" }
+      }
+    }
+    // For words not typed yet
+    else {
+      return { word, status: "missing" }
+    }
+  })
 }
 
 function startTimer() {
@@ -114,12 +136,22 @@ function randomNumber(number){
 
 
 function init() {
-  // getPassage()
-  displayWords()
-
+  initializePassages()
 }
 
 
 document.addEventListener('DOMContentLoaded', init)
 input.addEventListener('input', startGame)
 // document.addEventListener('keydown', addTypedWord)
+
+function resetGame() {
+  isPlaying = false
+  clearInterval(intervalId)
+  intervalId = null
+  input.value = ''
+  document.querySelector('#seconds').innerHTML = '00'
+  document.querySelector('#minutes').innerHTML = '00'
+  getNewPassage()
+}
+
+document.querySelector('#restart-button').addEventListener('click', resetGame)

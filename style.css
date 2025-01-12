@@ -53,3 +53,15 @@ input[type="text"] {
 #restart-button {
   padding: 2rem 4rem;
 }
+
+.word-correct {
+  background-color: lightgreen;
+}
+
+.word-incorrect {
+  background-color: lightcoral;
+}
+
+.word-pending {
+  background-color: transparent;
+}
