@@ -1,0 +1,144 @@
+{
+  "passages": [
+    {
+      "id": 1,
+      "title": "Inspiration",
+      "content": "The only way to achieve the impossible is to believe it is possible. Always strive to pursue your dreams with determination and persistence, for this is the key to success.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 2,
+      "title": "Perseverance",
+      "content": "Success is not final, failure is not fatal: It is the courage to continue that counts. Resilience and determination pave the way to enduring success.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 3,
+      "title": "Hope",
+      "content": "Hope is being able to see that there is light despite all of the darkness. Even in difficult times, hope provides strength and a reason to keep moving forward.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 4,
+      "title": "Dreams",
+      "content": "Dream big and chase your goals relentlessly. Dreams are the seeds of ambition and success, planting them in the right soil will yield a future full of possibilities.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 5,
+      "title": "Growth",
+      "content": "Growth comes when we face challenges with a positive attitude. The process may be difficult, but with perseverance, we can rise above our circumstances and emerge stronger.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 6,
+      "title": "Fearlessness",
+      "content": "The brave are not those who do not feel fear, but those who take action despite it. Fearless individuals choose to act in pursuit of their goals, regardless of the obstacles they may face.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 7,
+      "title": "Courage",
+      "content": "Courage is resistance to fear, mastery of fear, not absence of fear. Those who possess courage face adversity with strength, persist through challenges, and inspire others through their unwavering resolve.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 8,
+      "title": "Persistence",
+      "content": "Persistence is the key to overcoming failure. Even if the journey is tough, those who continue moving forward will eventually see the fruits of their labor.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 9,
+      "title": "Strength",
+      "content": "Strength comes from within. It's not just physical power, but emotional resilience that enables us to face life's toughest challenges.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 10,
+      "title": "Achievement",
+      "content": "Success is not measured by what you achieve but by how much you grow while pursuing your dreams. Stay focused and your efforts will lead to great rewards.",
+      "lengthCategory": "short",
+      "wordCount": 30
+    },
+    {
+      "id": 11,
+      "title": "Opportunities",
+      "content": "Opportunities are all around us. By staying alert and proactive, we can seize those opportunities, turn them into success, and change the trajectory of our lives.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 12,
+      "title": "Adventure",
+      "content": "Do not go where the path may lead, go instead where there is no path and leave a trail. True adventure requires courage and imagination to explore the unknown with bold enthusiasm.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 13,
+      "title": "Creativity",
+      "content": "Creativity is intelligence having fun. It's the spark that drives innovation and the ability to see things from a fresh perspective. By embracing creativity, we can solve problems and create remarkable solutions.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 14,
+      "title": "Perspective",
+      "content": "Sometimes, changing our perspective is all we need to make a breakthrough. By shifting our view of the world, we can gain new insights that help us navigate challenges more effectively.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 15,
+      "title": "Imagination",
+      "content": "Imagination is the beginning of creation. It fuels our ideas, desires, and ambitions. What we imagine can become our reality if we take action toward making it happen.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 16,
+      "title": "Kindness",
+      "content": "Kindness can change the world. A small act of kindness can ripple through society, bringing warmth and compassion to those who need it most. Never underestimate the power of a simple gesture.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 17,
+      "title": "Patience",
+      "content": "Patience is not the ability to wait, but the ability to keep a good attitude while waiting. It’s through patience that we learn to manage setbacks and continue moving toward our goals.",
+      "lengthCategory": "medium",
+      "wordCount": 50
+    },
+    {
+      "id": 18,
+      "title": "Knowledge",
+      "content": "An investment in knowledge always pays the best interest. Education and learning empower individuals to grow and contribute meaningfully to their communities. Knowledge enables innovation, drives progress, and enriches the mind in countless ways.",
+      "lengthCategory": "long",
+      "wordCount": 100
+    },
+    {
+      "id": 19,
+      "title": "Success",
+      "content": "Success is not just about achieving your personal goals. It’s also about growing through challenges, learning from failures, and creating an impact that benefits others. The true essence of success lies in perseverance, adaptability, and the ability to inspire those around you.",
+      "lengthCategory": "long",
+      "wordCount": 100
+    },
+    {
+      "id": 20,
+      "title": "Resilience",
+      "content": "Resilience is the ability to bounce back after adversity. Life’s challenges can be tough, but resilience helps us navigate difficult times with strength and perseverance. It enables us to overcome obstacles, learn valuable lessons, and continue moving forward, no matter what.",
+      "lengthCategory": "long",
+      "wordCount": 100
+    }
+  ]
+}

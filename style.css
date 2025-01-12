@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+
+
+header {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 3rem;
+} 
+
+span {
+  margin-left: 1rem;
+
+}
+
+.words-container {
+  min-width: 100%;
+  background-color: #d18484;
+}
+
+.row1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+.highlight {
+  background: #c4c4c4;
+  padding: 0.5rem 0.7rem
+}
+
+.input-container {
+  margin-top: 3rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  font-size: 3rem;
+}
+
+#restart-button {
+  padding: 2rem 4rem;
+}
