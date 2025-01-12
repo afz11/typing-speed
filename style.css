@@ -1,37 +1,54 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f7fb;
+  color: #2d3748;
+}
 
 header {
-  margin: 5rem auto;
-  display: flex;
-  justify-content: center;
+  padding: 2rem 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d3748;
 }
 
 main {
-  width: 80vw;
-  margin: 0 auto;
-  font-size: 3rem;
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
 } 
 
-span {
-  margin-left: 1rem;
-
-}
-
 .words-container {
-  min-width: 100%;
-  background-color: #d18484;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .words-display {
-  width: 100%;
-  margin: 0 auto;
-  padding: 5rem 0.5rem;
-  text-align: center;
-  box-sizing: border-box;
+  padding: 2rem;
+  line-height: 1.8;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.words-display span {
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .highlight {
@@ -40,28 +57,96 @@ span {
 }
 
 .input-container {
-  margin-top: 3rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 1rem 3rem;
-  box-sizing: border-box;
-  font-size: 3rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.timer {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-family: monospace;
+  color: #4a5568;
+}
+
+.reset-container {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 #restart-button {
-  padding: 2rem 4rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#restart-button:hover {
+  background-color: #3182ce;
 }
 
 .word-correct {
-  background-color: lightgreen;
+  color: #38a169;
 }
 
 .word-incorrect {
-  background-color: lightcoral;
+  color: #e53e3e;
+  text-decoration: underline wavy #e53e3e;
 }
 
 .word-pending {
-  background-color: transparent;
+  color: #718096;
+}
+
+/* Add current word indicator */
+.word-current {
+  background-color: #ebf8ff;
+  border-bottom: 2px solid #4299e1;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    font-size: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .words-display {
+    padding: 1.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  #restart-button {
+    padding: 0.6rem 1.5rem;
+  }
 }

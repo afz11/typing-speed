@@ -58,14 +58,9 @@ function updatePassageStyling(results) {
     const index = parseInt(span.dataset.wordnr)
     const result = results[index]
 
-    span.className = ''
-    
-    if (result.status === "correct") {
-      span.className = 'word-correct'
-    } else if (result.status === "incorrect") {
-      span.className = 'word-incorrect'
-    } else if (result.status === "missing") {
-      span.className = 'word-pending'
+    span.className = `word-${result.status}`
+    if (result.isCurrent) {
+      span.classList.add('word-current')
     }
   })
 }
@@ -80,20 +75,21 @@ function compareInput(userInput) {
     if (index < previousWords.length) {
       return {
         word,
-        status: previousWords[index] === word ? "correct" : "incorrect"
+        status: previousWords[index] === word ? "correct" : "incorrect",
+        isCurrent: false
       }
     }
     // For the current word being typed
     else if (index === previousWords.length) {
-      if (word.startsWith(currentWord)) {
-        return { word, status: "correct" }
-      } else {
-        return { word, status: "incorrect" }
+      return {
+        word,
+        status: word.startsWith(currentWord) ? "correct" : "incorrect",
+        isCurrent: true
       }
     }
     // For words not typed yet
     else {
-      return { word, status: "missing" }
+      return { word, status: "missing", isCurrent: false }
     }
   })
 }
