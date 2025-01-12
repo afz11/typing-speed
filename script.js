@@ -1,37 +1,93 @@
-const displayDiv = document.querySelector('.row1')
+const displayDiv = document.querySelector('.words-display')
+const input = document.querySelector('#typing-input')
+document.querySelector('.timer')
+
+console.log(displayDiv)
+
+let sentence = ''
+let typedWords = []
+let isPlaying = false
+let intervalId;
 
 
-
-const getPassages = async () => {
+async function getPassage (){
   const response = await fetch('./passages.json')
   const data = await response.json()
+  const index = randomNumber(data.passages.length)
+
+  const passage = data.passages[index]
   
-  const passages = data.passages
-  const randomPassage = passages.filter((passage)=> {
-    const random = Math.floor(Math.random() * passages.length)
-    if (passages.indexOf(passage) === random) {
-      return passage
-    }
-  })
-  const words = randomPassage[0].content.split(' ')
-  let number = 1
-  // displayDiv.innerHTML = 
-  words.forEach(word => {
+  return passage
+}
+
+async function displayWords() {
+
+  // get passage
+  const { content } = await getPassage()
+
+  // break down the passage in to words
+  const words = content.split(' ')
+  let wordNr = 1
+
+  
+    // Display each word in the Word-display
+  words.forEach(word  => {
     const span = document.createElement('span')
-    span.dataset.wordnr = number++ 
+    span.dataset.wordnr = wordNr++
     span.textContent = word
-    displayDiv.appendChild(span) 
+    displayDiv.appendChild(span)
   });
+}
 
-} 
+function startGame(){
+  isPlaying = true
+  startTimer()
+  
+}
 
 
-// console.log(passage)
+
+function startTimer() {
+
+  let totalSeconds = 0
+
+  if(!intervalId) {
+    intervalId = setInterval( () => {
+      totalSeconds++
+      document.querySelector('#seconds').innerHTML = pad(totalSeconds % 60)
+      document.querySelector('#minutes').innerHTML = pad(parseInt(totalSeconds / 60))
+    }, 1000)
+  }
+}
+
+function stopTimer() {
+  if (isGameFinished) {
+    clearInterval(intervalId)
+    isPlaying = false
+  }
+}
+
+function pad(timer) {
+  let timerString = timer + ""
+  if (timerString.length < 2) {
+    return `0${timerString}`
+  } else {
+    return timerString
+  }
+}
+
+
+function randomNumber(number){
+  return Math.floor(Math.random() * number)
+}
+
 
 function init() {
-  getPassages()
+  // getPassage()
+  displayWords()
 
 }
 
 
 document.addEventListener('DOMContentLoaded', init)
+input.addEventListener('input', startGame)
