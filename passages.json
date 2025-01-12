@@ -2,143 +2,150 @@
   "passages": [
     {
       "id": 1,
-      "title": "Inspiration",
-      "content": "The only way to achieve the impossible is to believe it is possible. Always strive to pursue your dreams with determination and persistence, for this is the key to success.",
+      "title": "Technology",
+      "content": "Artificial intelligence continues to reshape our world in unprecedented ways. Machine learning algorithms now power everything from smartphone applications to autonomous vehicles.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 2,
-      "title": "Perseverance",
-      "content": "Success is not final, failure is not fatal: It is the courage to continue that counts. Resilience and determination pave the way to enduring success.",
+      "title": "Nature",
+      "content": "The Amazon rainforest serves as Earth's lungs, producing oxygen and hosting countless species. Its preservation is crucial for global biodiversity.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 3,
-      "title": "Hope",
-      "content": "Hope is being able to see that there is light despite all of the darkness. Even in difficult times, hope provides strength and a reason to keep moving forward.",
+      "title": "Space",
+      "content": "Mars exploration represents humanity's next giant leap. Scientists work tirelessly to develop sustainable solutions for long-term human habitation on the red planet.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 4,
-      "title": "Dreams",
-      "content": "Dream big and chase your goals relentlessly. Dreams are the seeds of ambition and success, planting them in the right soil will yield a future full of possibilities.",
+      "title": "Ocean",
+      "content": "Deep beneath the ocean's surface lies a world of bioluminescent creatures. These organisms produce their own light through complex chemical reactions.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 5,
-      "title": "Growth",
-      "content": "Growth comes when we face challenges with a positive attitude. The process may be difficult, but with perseverance, we can rise above our circumstances and emerge stronger.",
+      "title": "Innovation",
+      "content": "Quantum computing promises to revolutionize data processing. These powerful machines could solve problems that traditional computers would take centuries to complete.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 6,
-      "title": "Fearlessness",
-      "content": "The brave are not those who do not feel fear, but those who take action despite it. Fearless individuals choose to act in pursuit of their goals, regardless of the obstacles they may face.",
+      "title": "Climate",
+      "content": "Renewable energy adoption continues to accelerate globally. Solar and wind power installations are becoming increasingly cost-effective alternatives to fossil fuels.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 7,
-      "title": "Courage",
-      "content": "Courage is resistance to fear, mastery of fear, not absence of fear. Those who possess courage face adversity with strength, persist through challenges, and inspire others through their unwavering resolve.",
+      "title": "Health",
+      "content": "Modern medicine advances through genetic research. Understanding DNA helps doctors develop personalized treatments for various diseases and conditions.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 8,
-      "title": "Persistence",
-      "content": "Persistence is the key to overcoming failure. Even if the journey is tough, those who continue moving forward will eventually see the fruits of their labor.",
+      "title": "Education",
+      "content": "Online learning platforms transform education accessibility. Students worldwide can now access quality educational content through digital technologies.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 9,
-      "title": "Strength",
-      "content": "Strength comes from within. It's not just physical power, but emotional resilience that enables us to face life's toughest challenges.",
+      "title": "Architecture",
+      "content": "Sustainable building designs incorporate natural elements. Green architecture focuses on reducing environmental impact while maximizing energy efficiency.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 10,
-      "title": "Achievement",
-      "content": "Success is not measured by what you achieve but by how much you grow while pursuing your dreams. Stay focused and your efforts will lead to great rewards.",
+      "title": "Transportation",
+      "content": "Electric vehicles represent the future of transportation. Charging infrastructure expands as more consumers switch to sustainable mobility options.",
       "lengthCategory": "short",
-      "wordCount": 30
+      "wordCount": 20
     },
     {
       "id": 11,
-      "title": "Opportunities",
-      "content": "Opportunities are all around us. By staying alert and proactive, we can seize those opportunities, turn them into success, and change the trajectory of our lives.",
+      "title": "Digital Revolution",
+      "content": "The digital revolution transforms every aspect of modern life, from how we work to how we socialize. Cloud computing enables unprecedented connectivity and collaboration, while artificial intelligence systems become increasingly sophisticated. The Internet of Things connects our devices in ways previously imagined only in science fiction.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 12,
-      "title": "Adventure",
-      "content": "Do not go where the path may lead, go instead where there is no path and leave a trail. True adventure requires courage and imagination to explore the unknown with bold enthusiasm.",
+      "title": "Environmental Conservation",
+      "content": "Environmental conservation requires global cooperation and individual action. Climate change poses unprecedented challenges to ecosystems worldwide, affecting wildlife populations and natural habitats. Sustainable practices in industry and agriculture become increasingly crucial as we work to protect Earth's biodiversity for future generations.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 13,
-      "title": "Creativity",
-      "content": "Creativity is intelligence having fun. It's the spark that drives innovation and the ability to see things from a fresh perspective. By embracing creativity, we can solve problems and create remarkable solutions.",
+      "title": "Space Exploration",
+      "content": "Space exploration enters a new era as private companies join government agencies in reaching for the stars. Reusable rocket technology makes space travel more accessible and cost-effective. Scientists prepare for ambitious missions to Mars while developing sustainable solutions for long-term space habitation.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 14,
-      "title": "Perspective",
-      "content": "Sometimes, changing our perspective is all we need to make a breakthrough. By shifting our view of the world, we can gain new insights that help us navigate challenges more effectively.",
+      "title": "Medical Breakthroughs",
+      "content": "Medical research advances rapidly through technological innovation and genetic understanding. Personalized medicine tailors treatments to individual genetic profiles, while artificial intelligence assists in diagnosis and treatment planning. Biotechnology offers new solutions for previously incurable conditions.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 15,
-      "title": "Imagination",
-      "content": "Imagination is the beginning of creation. It fuels our ideas, desires, and ambitions. What we imagine can become our reality if we take action toward making it happen.",
+      "title": "Future Cities",
+      "content": "Smart cities integrate technology to improve urban living and sustainability. Sensors and data analytics optimize everything from traffic flow to energy consumption. Green spaces and vertical gardens bring nature into urban environments, while autonomous vehicles promise to revolutionize transportation.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 16,
-      "title": "Kindness",
-      "content": "Kindness can change the world. A small act of kindness can ripple through society, bringing warmth and compassion to those who need it most. Never underestimate the power of a simple gesture.",
+      "title": "Ocean Conservation",
+      "content": "Ocean conservation becomes increasingly critical as marine ecosystems face multiple threats. Plastic pollution and ocean acidification endanger countless species, while overfishing depletes vital fish populations. Scientists work to develop solutions while advocating for stronger environmental protections.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 17,
-      "title": "Patience",
-      "content": "Patience is not the ability to wait, but the ability to keep a good attitude while waiting. It’s through patience that we learn to manage setbacks and continue moving toward our goals.",
+      "title": "Renewable Energy",
+      "content": "Renewable energy technologies advance rapidly as the world transitions away from fossil fuels. Solar and wind power become increasingly efficient and cost-effective, while energy storage solutions improve. Smart grids enable better distribution and management of sustainable energy resources.",
       "lengthCategory": "medium",
-      "wordCount": 50
+      "wordCount": 45
     },
     {
       "id": 18,
-      "title": "Knowledge",
-      "content": "An investment in knowledge always pays the best interest. Education and learning empower individuals to grow and contribute meaningfully to their communities. Knowledge enables innovation, drives progress, and enriches the mind in countless ways.",
-      "lengthCategory": "long",
-      "wordCount": 100
+      "title": "Digital Education",
+      "content": "Digital education platforms revolutionize learning by making knowledge accessible to anyone with an internet connection. Interactive content and artificial intelligence tutors provide personalized learning experiences. Virtual and augmented reality create immersive educational environments.",
+      "lengthCategory": "medium",
+      "wordCount": 45
     },
     {
       "id": 19,
-      "title": "Success",
-      "content": "Success is not just about achieving your personal goals. It’s also about growing through challenges, learning from failures, and creating an impact that benefits others. The true essence of success lies in perseverance, adaptability, and the ability to inspire those around you.",
-      "lengthCategory": "long",
-      "wordCount": 100
+      "title": "Biotechnology",
+      "content": "Biotechnology advances offer new solutions for health and environmental challenges. Gene editing technologies like CRISPR enable precise genetic modifications, while synthetic biology creates sustainable alternatives to traditional materials. Researchers explore applications in medicine, agriculture, and industry.",
+      "lengthCategory": "medium",
+      "wordCount": 45
     },
     {
       "id": 20,
-      "title": "Resilience",
-      "content": "Resilience is the ability to bounce back after adversity. Life’s challenges can be tough, but resilience helps us navigate difficult times with strength and perseverance. It enables us to overcome obstacles, learn valuable lessons, and continue moving forward, no matter what.",
+      "title": "Artificial Intelligence",
+      "content": "Artificial intelligence systems become increasingly sophisticated and integrated into daily life. Machine learning algorithms improve through exposure to vast datasets, while neural networks mimic human brain function. Ethical considerations guide development as AI capabilities expand.",
+      "lengthCategory": "medium",
+      "wordCount": 45
+    },
+    {
+      "id": 21,
+      "title": "Future of Technology",
+      "content": "The rapid advancement of technology continues to reshape human society in profound and unexpected ways. Artificial intelligence and machine learning algorithms become increasingly sophisticated, powering everything from autonomous vehicles to personalized medical treatments. Quantum computing promises to revolutionize data processing, while biotechnology offers new solutions for health and environmental challenges. The Internet of Things connects our world in ways previously unimaginable, creating smart cities that optimize resources and improve quality of life.",
       "lengthCategory": "long",
-      "wordCount": 100
+      "wordCount": 80
     }
   ]
 }

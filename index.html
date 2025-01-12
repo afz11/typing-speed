@@ -10,6 +10,9 @@
 <body>
   <header>
     <h1>Typing speed test</h1>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      🌙
+    </button>
   </header>
   <main>
     <div class="words-container">
@@ -17,6 +20,7 @@
     </div>
     <div class="input-container">
       <input type="text" name="typing-input" id="typing-input">
+      <div class="stats-container"></div>
       <div class="timer"><span id="minutes">00</span>:<span id="seconds">00</span></div>
       <div class="reset-container">
         <button type="reset" id="restart-button">Restart</button>
